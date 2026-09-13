@@ -1015,6 +1015,75 @@ img {
         gap: 18px;
         line-height: 1.35;
     }
+
+    .hero-grid {
+        gap: 22px;
+    }
+
+    .hero-art {
+        width: min(100%, 340px);
+        height: 340px;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .hero-art .ring-back {
+        width: 300px;
+        height: 300px;
+        right: 50%;
+        top: 8px;
+        transform: translateX(50%);
+    }
+
+    .hero-art .ring-front {
+        width: 210px;
+        height: 210px;
+        right: 50%;
+        top: 62px;
+        transform: translateX(50%);
+    }
+
+    .hero-art .art-sun {
+        right: 50%;
+        top: 88px;
+        transform: translateX(50%);
+    }
+
+    .hero-art .leaf-one {
+        right: calc(50% + 72px);
+        top: 34px;
+    }
+
+    .hero-art .leaf-two {
+        right: calc(50% + 108px);
+        top: 202px;
+    }
+
+    .hero-art .art-card {
+        width: min(210px, 68vw);
+        height: 158px;
+        right: 50%;
+        top: 158px;
+        transform: translateX(50%);
+        padding: 23px;
+    }
+
+    .hero-art .art-caption {
+        right: 50%;
+        bottom: 5px;
+        transform: translateX(50%);
+        white-space: nowrap;
+        font-size: 9px;
+    }
+
+    .trust-strip {
+        row-gap: 10px;
+        padding: 20px 0 25px;
+    }
+
+    .trust-strip strong {
+        font-size: 15px;
+    }
 }
 
 /* Hierarquia tipografica dos titulos */
