@@ -922,6 +922,101 @@
     }
 }
 
+/* Ajustes para leitura e uso confortável em telas menores */
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .site-header {
+        height: auto;
+        min-height: 72px;
+    }
+
+    .header-inner {
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .header-inner > .button {
+        flex: 0 0 auto;
+        width: auto;
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .work-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .work-item-large {
+        grid-column: span 2;
+    }
+
+    .work-item img,
+    .work-item-large img {
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+        background: #dfeae4;
+    }
+
+    .work-caption {
+        padding: 18px 20px 21px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: min(100% - 28px, 600px);
+    }
+
+    .header-inner {
+        width: calc(100% - 28px);
+    }
+
+    .brand img {
+        width: 112px;
+        height: 48px;
+    }
+
+    .header-inner > .button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .work-gallery {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .work-item-large {
+        grid-column: auto;
+    }
+
+    .work-caption {
+        padding: 18px 18px 21px;
+    }
+
+    .work-caption h3 {
+        font-size: 20px;
+    }
+
+    .faq-list summary {
+        gap: 18px;
+        line-height: 1.35;
+    }
+}
+
 /* Hierarquia tipografica dos titulos */
 h1 {
     font-family: var(--display);
