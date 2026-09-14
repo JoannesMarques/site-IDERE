@@ -859,6 +859,51 @@
     gap: clamp(45px, 7vw, 82px);
 }
 
+@media (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero-art {
+        width: min(100%, 420px);
+        margin-inline: auto;
+    }
+
+    .hero-portrait {
+        width: min(100%, 390px);
+        height: min(520px, 124vw);
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-art {
+        height: 390px;
+        transform: none;
+        margin-bottom: 0;
+    }
+
+    .hero-portrait {
+        width: min(100%, 330px);
+        height: 390px;
+        top: 0;
+    }
+
+    .art-caption {
+        display: none;
+    }
+
+    .hero-grid {
+        padding-top: 48px;
+    }
+
+    .trust-strip {
+        gap: 10px 14px;
+    }
+}
+
 .faq-grid {
     gap: clamp(50px, 9vw, 100px);
 }
@@ -1097,6 +1142,24 @@ h3 {
 h4 {
     font-family: var(--serif);
     font-weight: 500;
+}
+
+@media (max-width: 850px) {
+    .hero-portrait {
+        width: min(100%, 300px);
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-art {
+        height: 340px;
+    }
+
+    .hero-portrait {
+        width: min(100%, 255px);
+        height: 340px;
+    }
 }
 
 h5 {
